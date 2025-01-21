@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amyra Group </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Amyra Group Logo">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Welcome to Amyra Group</h1>
+            <p>Your Trusted Partner in Solar Water Heater and Solar Power Plant Solutions
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>On-Grid Solar Rooftop Systems</h3>
+            <p>An ideal solution for households, educational institutes, and industrial establishments. Features include
+                modular design, high-efficiency inverters, and clean, silent power. Excess power can be exported to the
+                grid.</p>
+        </div>
+        <div class="service-item">
+            <h3>Solar Street Lighting Systems</h3>
+            <p>Standalone lighting systems for roads, townships, and rural electrification. Features include
+                dusk-to-dawn controllers, weather-proof luminaires, and robust galvanized steel poles.</p>
+        </div>
+        <div class="service-item">
+            <h3>Solar Power Packs</h3>
+            <p>Reliable and efficient power systems for household, campus, and garden lighting. Includes high-efficiency
+                inverters and customizable designs to meet unique needs.</p>
+        </div>
+        <div class="service-item">
+            <h3>Industrial Solar Water Heating Systems</h3>
+            <p>Designed for specific requirements like pressurized systems, boiler feed heating, and in-process heating.
+                Features include automated control panels and low recurring costs.</p>
+        </div>
+        <div class="service-item">
+            <h3>Domestic Solar Water Heating Systems</h3>
+            <p>Available in flat plate collector (FPC) and evacuated tube collector (ETC) designs, compatible with hard
+                water. Features include PUF insulation and built-in electrical backup.</p>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Completed Projects</h2>
+        <p>We take pride in the successful installations of solar water heaters and solar power plants at numerous prestigious locations across
+            India. Some of our notable projects include:</p>
+
+        <ul>
+            <li>ESIC Hospital Kolhapur - A large-scale installation to meet the hospital’s hot water requirements
+                efficiently.</li>
+            <li>RR Hospital Delhi Cantt - Solar water heaters installed to cater to the continuous hot water needs of
+                the hospital.</li>
+            <li>ESIC Hospital Sambhamurthy Nagar, Kakinada - Solar systems installed across multiple buildings, reducing
+                electricity bills and carbon footprint.</li>
+            <li>Military Engineer Services (MES) Locations: Fazika, Udhampur, Dehradun, Bareli, Jaipur, Bhalgaon, Delhi
+                Cantt South, Patiala - Multiple installations providing hot water solutions for military personnel and
+                staff.</li>
+            <li>Netaji Subhash National Institute of Sports, Patiala - High-capacity solar water heaters installed for
+                the sports institute's accommodation facilities.</li>
+            <li>BSA Hospital Delhi - Ensuring the hospital’s hot water supply is sustainable and cost-effective.</li>
+            <li>DDA-ED-8 ITO Delhi - A government project aimed at reducing the energy consumption of office buildings.
+            </li>
+            <li>Ladies Harding Hospital - Installation of efficient solar water heaters to support the healthcare
+                facility’s daily operations.</li>
+            <li>And Many More...</li>
+        </ul>
+
+        <div class="project-gallery">
+            <img src="project1.jpeg" alt="Solar Heater Installation at Project 1">
+            <img src="project2.avif" alt="Solar Heater Installation at Project 2">
+            <img src="project3.jpg" alt="Solar Heater Installation at Project 3">
+            <img src="maintenance.jpg" alt="Solar Heater Installation at Project 3">
+            <img src="solar-heater.jpeg" alt="Solar Heater Installation at Project 3">
+            <img src="consultation.jpg" alt="Solar Heater Installation at Project 3">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Amyra Group is a leader in the installation of solar water heaters and solar power plants across India.
+                We are committed to
+                providing sustainable energy solutions that reduce your electricity consumption while promoting an
+                eco-friendly environment. Our team of experts specializes in the efficient installation, maintenance,
+                and repair of high-performance solar water heaters, serving both residential and commercial clients.</p>
+            <p>With numerous successful installations at hospitals, military establishments, and government offices,
+                Amyra Group has built a solid reputation for providing reliable and cost-effective solar water heating
+                and solar power plants
+                solutions.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For Solar Water Heater and Solar Power Plant Solutions.</p>
+
+        <form id="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="number">
+        <a href="tel:+916005116372" class="Contact-Btn">Call : +916005116372</a>
+        <a href="mailto:groupamyra@gmail.com" class="Contact-Btn">Email : groupamyra@gmail.com</a>
+    </section>
+
+    <!-- Include EmailJS script -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script>
+        // Initialize EmailJS with your user ID
+        emailjs.init("hV6by7ZqYKna0nXha");
+
+        // Attach event listener to the form
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();  // Prevent default form submission
+
+            // Get the form data
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+            };
+
+            // Send the email
+            emailjs.send("service_4fw19v4", "template_qhpasqr", formData)
+                .then(function (response) {
+                    console.log("Success!", response);
+                    alert("Your message has been sent successfully!");
+                }, function (error) {
+                    console.error("Failed", error);
+                    alert("Something went wrong. Please try again.");
+                });
+        });
+    </script>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Amyra Group. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
